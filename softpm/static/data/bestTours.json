@@ -1,0 +1,183 @@
+[
+  {
+    "id": "1002",
+    "tour-title": "Paris: Tour Tootbus Hop-on Hop-off Discovery",
+    "popular-tour": 1,
+    "url": "www.url.com",
+    "price": "45,00",
+    "main-image": "/static/png/tours/paris/hopOn-HopOff/hop-main-photo.jpg",
+    "sub-image1": "/static/png/tours/paris/hopOn-HopOff/hop-sec-photo1.jpg",
+    "sub-image2": "/static/png/tours/paris/hopOn-HopOff/hop-sec-photo2.jpg",
+    "sub-image3": "/static/png/tours/paris/hopOn-HopOff/hop-sec-photo3.jpg",
+    "sub-image4": "/static/png/tours/paris/hopOn-HopOff/hop-sec-photo4.jpg",
+    "short-description": "Conheça Paris numa tour num autocarro aberto. Aprenda sobre os pontos turísticos e pare em marcos populares da cidade.",
+    "description": "Ao passear pela cidade, desfrute dos comentários do guia de áudio para aprender mais sobre Paris e desembarque em qualquer parada para conhecer os pontos turísticos com mais detalhes. Visite o Museu do Louvre, admire a Catedral de Notre Dame, faça compras na Champs-Elysées, visite o topo do Arco do Triunfo ou a Torre Eiffel e desfrute de vistas incríveis da cidade.<br><br>Dê um passeio no Bairro Latino, Marais ou Ile de Saint Louis e saiba mais sobre Paris através do comentário do guia de áudio. Um canal infantil especial está disponível para as crianças em inglês e francês.",
+    "included": [
+      "Passeio turístico hop-on hop-off ",
+      "Guia de áudio para crianças",
+      "Guia Turístico",
+      "Wi-Fi a bordo"
+    ],
+    "importantInfo": [
+      "Cancelamento grátis",
+      "Você pode iniciar o passeio em qualquer um dos pontos de autocarro designados.",
+      "Não são permitidos animais domésticos"
+    ],
+    "date": [
+      {"start_date": "31-01-2023"},
+      {"end_date": "31-08-2024"}
+    ],
+    "availability": [
+      {"Mon": ["11:30", "14:30"] },
+      {"Tue": ["11:30", "14:30"] },
+      {"Wed": [] },
+      {"Thu": ["11:30", "14:30"] },
+      {"Fri": ["11:30", "14:30"] },
+      {"Sat": ["11:30", "14:30"] },
+      {"Sun": ["11:30"] }
+    ]
+  },
+
+  {
+    "id": "1003",
+    "tour-title": "Ingresso Museu do Louvre ",
+    "popular-tour": 1,
+    "url": "www.url.com",
+    "price": "17,00",
+    "main-image": "/static/png/tours/paris/museu-louvre/main-louvre.jpg",
+    "sub-image1": "/static/png/tours/paris/museu-louvre/louvre-sec-photo1.jpg",
+    "sub-image2": "/static/png/tours/paris/museu-louvre/louvre-sec-photo2.jpg",
+    "sub-image3": "/static/png/tours/paris/museu-louvre/louvre-sec-photo3.jpg",
+    "sub-image4": "/static/png/tours/paris/museu-louvre/louvre-sec-photo4.jpg",
+    "short-description": "Entre no Museu do Louvre em Paris e encante-se obras-primas artísticas como a Mona Lisa de Leonardo da Vinci. A entrada é garantida dentro de 30 minutos.",
+    "description": "Conheça o Louvre no seu próprio ritmo com um ingresso com hora marcada, garantindo que você entre dentro de 30 minutos. Veja obras de arte imperdíveis como a Mona Lisa e a Vênus de Milo.<br<br>O museu foi aberto em 10 de agosto de 1793 com uma exposição de apenas 537 pinturas. Apesar do seu encerramento em 1796 devido a problemas estruturais, foi reaberto em 1801 como Musée Napoléon com uma coleção maior.<br><br>Desde então, a coleção já adquiriu mais de 20.000 obras. Agora, possui 8 departamentos: antiguidades egípcias; antiguidades do oriente próximo; antiguidades gregas, etruscas e romanas; arte Islâmica; escultura; artes decorativas; pinturas; e estampas e desenhos.",
+    "included": [
+      "Bilhete para o Museu do Louvre sem fila da bilheteria",
+      "Acesso total à coleção permanente e às exposições temporárias",
+      "Guia Turístico"
+    ],
+    "importantInfo": [
+      "Cancelamento grátis",
+      "Duração 2 - 3 horas",
+      "Levar Passaporte ou documento de identidade"
+    ],
+      "date": [
+        {"start_date": "31-01-2023"},
+        {"end_date": "31-12-2024"}
+      ],
+      "availability": [
+        {"Mon": ["11:30", "14:30"] },
+        {"Tue": ["11:30", "14:30"] },
+        {"Wed": ["11:30", "14:30"] },
+        {"Thu": ["9:30", "14:30"] },
+        {"Fri": ["11:30", "14:30","15:30"] },
+        {"Sat": [] },
+        {"Sun": [] }
+      ]
+  },
+
+  {
+    "id": "1004",
+    "tour-title": "Cruzeiro de uma hora pelo rio Sena",
+    "popular-tour": 0,
+    "url": "www.url.com",
+    "price": "16,00",
+    "main-image": "/static/png/tours/paris/barco-rio-sena/barco-sena-main.jpg",
+    "sub-image1": "/static/png/tours/paris/barco-rio-sena/barco-sena-sec-photo1.jpg",
+    "sub-image2": "/static/png/tours/paris/barco-rio-sena/barco-sena-sec-photo2.jpg",
+    "sub-image3": "/static/png/tours/paris/barco-rio-sena/barco-sena-sec-photo3.jpg",
+    "sub-image4": "/static/png/tours/paris/barco-rio-sena/barco-sena-sec-photo4.jpg",
+    "short-description": "Admire os pontos turísticos mais emblemáticos de Paris em um relaxante passeio de barco pelo rio Sena.",
+    "description": "Admire os pontos turísticos mais emblemáticos de Paris em um relaxante passeio de barco pelo rio Sena. Aprenda com os comentários do guia de áudio ou com o aplicativo web interativo e saiba mais sobre locais como a Torre Eiffel e a Notre-Dame.<br><br>Durante o seu cruzeiro, você passará pela Torre Eiffel, Notre Dame, Hotel de Ville, Louvre e muito mais.<br><br>Opte por fazer seu cruzeiro à noite para ter outra perspectiva da Cidade Luz, à medida que a cidade fica iluminada quando a noite se aproxima.<br><br>Guias de áudio individuais estão disponíveis em 14 idiomas e fornecem comentários sobre Paris e sua história, monumentos e arquitetura. Observe que o guia de áudio está disponível através do seu smartphone, conectando-se ao Wi-Fi a bordo.",
+    "included": [
+      "Cruzeiro de ida e volta no Rio Sena",
+      "Comentários em áudio ou comentários e conteúdo adicional por meio de um aplicativo para smartphone",
+      "Bebidas e lanches",
+      "Fotos de lembrança"
+    ],
+    "importantInfo": [
+      "Cancelamento grátis",
+      "Duração 1 hora",
+      "As saídas regulares são entre 10h30 e 21h, durante o outono e o inverno"
+    ],
+    "availability": [
+        {"Mon": ["9:30", "17:30"] },
+        {"Tue": ["9:30", "17:30"] },
+        {"Wed": ["9:30", "17:30"] },
+        {"Thu": ["9:30", "17:30"] },
+        {"Fri": ["9:30", "17:30"] },
+        {"Sat": ["9:30", "17:30"] },
+        {"Sun": ["9:30", "17:30"] }
+      ]
+  },
+
+  {
+    "id": "1005",
+    "tour-title": "Show de Cabaré no Moulin Rouge",
+    "popular-tour": 1,
+    "url": "www.url.com",
+    "price": "75,00",
+    "main-image": "/static/png/tours/paris/moulin-rouge/moulin-main.jpg",
+    "sub-image1": "/static/png/tours/paris/moulin-rouge/moulin-sec-photo1.jpg",
+    "sub-image2": "/static/png/tours/paris/moulin-rouge/moulin-sec-photo2.jpg",
+    "sub-image3": "/static/png/tours/paris/moulin-rouge/moulin-sec-photo3.jpg",
+    "sub-image4": "/static/png/tours/paris/moulin-rouge/moulin-sec-photo4.jpg",
+    "short-description": "Desfrute de uma noite inesquecível no Moulin Rouge, o famoso cabaré de Paris, com ingressos para o deslumbrante espetáculo \"Féerie\".",
+    "description": "Sente-se em um dos cabarés mais famosos do mundo em uma apresentação do show do Moulin Rouge “Féerie”, criado por Doris Haug e Ruggero Angeletti e coreografado por Bill Goodson.<br><br>Assista a uma trupe de 100 artistas, incluindo 60 Doris Girls, e um desfile com 1.000 trajes de penas, strass e lantejoulas desenhados por Corrado Collabucci. Veja as cenografias de Gaetano Castelli e ouça a música de Pierre Porte, produzida por 80 músicos e 60 cantores de coral.<br><br>Durante o show, desfrute de meia garrafa de champanhe enquanto saboreia uma extravagante delícia oral e auditiva. Deleite-se com uma luxuosa coleção de cores e performances enquanto contempla o esplendor deste lendário cabaré.",
+    "included": [
+      "Entrada para o Moulin Rouge",
+      "Ingresso para o cabaré \"Féerie\" do Moulin Rouge",
+      "Meia garrafa de champanhe",
+      "Serviço e dicas"
+    ],
+    "importantInfo": [
+      "Cancelamento grátis",
+      "Duração 2 - 3 horas",
+      "Não recomendado a crianças menores de 6 anos"
+    ],
+    "availability": [
+        {"Mon": [] },
+        {"Tue": [] },
+        {"Wed": [] },
+        {"Thu": [] },
+        {"Fri": ["21:30"] },
+        {"Sat": ["21:30"] },
+        {"Sun": ["21:30"] }
+      ]
+  },
+
+    {
+    "id": "1006",
+    "tour-title": "Visita à Torre Eiffel",
+    "popular-tour": 1,
+    "url": "www.url.com",
+    "price": "35,00",
+    "main-image": "/static/png/tours/torreEffiel/main-torreEffiel.jpg",
+    "sub-image1": "/static/png/tours/torreEffiel/eiffel-tower-737185_1280.jpg",
+    "sub-image2": "/static/png/tours/torreEffiel/eiffel-2789943_1280.jpg",
+    "sub-image3": "/static/png/tours/torreEffiel/paris-4384732_1280.jpg",
+    "sub-image4": "/static/png/tours/torreEffiel/paris-2036501_1280.jpg",
+    "short-description": "Faça um tour pela famosa Torre Eiffel e admire a cidade de cima. Desfrute de um tour guiado de duas horas em inglês na torre para conhecer as origens e os segredos por trás da sua construção.",
+    "description": "Faça um tour pela famosa Torre Eiffel e admire a cidade de cima. Desfrute de um tour guiado de duas horas em inglês na torre para conhecer as origens e os segredos por trás da construção desta obra-prima arquitetônica.<br><br>Pegue o elevador para subir até a plataforma de observação no segundo andar e, se você escolher o ingresso para o topo, siga até o ponto mais alto da torre. De lá, maravilhe-se com as incríveis vistas panorâmicas da capital francesa, incluindo a Sacré Coeur, o Louvre e o Arco do Triunfo.<br><br>Inclua uma opção de cruzeiro de uma hora no Sena, disponível a qualquer momento após sua visita à Torre Eiffel.<br><br>Admire os belos edifícios da cidade, muitos deles listados como Patrimônios da Humanidade pela Unesco, como a Torre Eiffel, o Les Invalides, a Catedral de Notre-Dame e a Conciergerie. Passe por charmosas casas e restaurantes flutuantes pelo caminho.",
+    "included": [
+      "Refeições",
+      "Transporte",
+      "Guia Turístico",
+      "Entradas para Atrações"
+    ],
+    "importantInfo": [
+      "Cancelamento grátis",
+      "Duração 2 - 3 horas",
+      "Não recomendado a pessoas com mobilidade reduzida"
+    ],
+      "availability": [
+        {"Mon": ["11:30", "14:30"] },
+        {"Tue": ["11:30", "14:30"] },
+        {"Wed": [] },
+        {"Thu": ["9:30", "14:30"] },
+        {"Fri": ["11:30", "14:30","15:30"] },
+        {"Sat": [] },
+        {"Sun": [] }
+      ]
+  }
+]

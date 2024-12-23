@@ -1,0 +1,165 @@
+{% extends 'dashboard/base-dashboard.html' %}
+
+{% block conteudo %}
+<!-- =============== ENTER YOUR CODE BELOW ================= -->
+
+<section class="dashboard-area">
+    <div class="layout-body">
+        <div class="row">
+            <h5 class="page-title">Configuração</h5>
+        </div>
+
+        <div class="layout-innerBody">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">Perfil</button>
+                    <button class="nav-link" id="nav-company-tab" data-bs-toggle="tab" data-bs-target="#nav-company" type="button" role="tab" aria-controls="nav-company" aria-selected="false">Empresas</button>
+                    <button class="nav-link" id="nav-employee-tab" data-bs-toggle="tab" data-bs-target="#nav-employee" type="button" role="tab" aria-controls="nav-employee" aria-selected="false">Colaboradores</button>
+                    <button class="nav-link" id="nav-tickets-tab" data-bs-toggle="tab" data-bs-target="#nav-tickets" type="button" role="tab" aria-controls="nav-tickets" aria-selected="false">Tickets</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <h5 class="config-subtitle">Configurações do perfil do utilizador</h5>
+                    <p>Content for Perfil tab...</p>
+                </div>
+                <div class="tab-pane fade" id="nav-company" role="tabpanel" aria-labelledby="nav-company-tab">
+                    <h5 class="config-subtitle">Configurações do perfil das empresas</h5>
+                    <p>Content for Empresa tab...</p>
+                     
+                    <!-- Dropdown for selecting the company -->
+                    <div class="dropdown ms-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCompanyButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Selecione a Empresa
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownCompanyButton">
+                            {% for company in companies %}
+                                <li>
+                                    <a class="dropdown-item" href="#" data-company="{{ company.company_id }}">
+                                        {{ company.company_name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <!-- Company information fields -->
+                    <div>
+                        <strong>Nome da Empresa:</strong> <span id="companyNameField"></span>
+                    </div>
+                    <div>
+                        <strong>Website:</strong> <span id="companyWebsiteField"></span>
+                    </div>
+                    <div>
+                        <strong>Cargo:</strong> <span id="companyJobPositionField"></span>
+                    </div>
+                    <div>
+                        <strong>Descrição:</strong> <span id="companyDescriptionField"></span>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="nav-employee" role="tabpanel" aria-labelledby="nav-employee-tab">
+                    <h5 class="config-subtitle">Configurações dos colaboradores da empresa</h5>
+                    <p>Content for Colaboradores tab...</p>
+
+                    <!-- Dropdown for selecting the company -->
+                    <div class="dropdown ms-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCompanyButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Selecione a Empresa
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownCompanyButton">
+                            {% for company in companies %}
+                                <li>
+                                    <a class="dropdown-item" href="#" data-company="{{ company.company_id }}">
+                                        {{ company.company_name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <!-- Placeholder for employee list -->
+                    <div>
+                        <h6>Lista de Colaboradores</h6>
+                        <ul id="employeeList">
+                            <p>Select a company to view its employees</p>
+                            <table id="ticketsTable" class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Posição</th>
+                                        <th>Departamento</th>
+                                        <th>Notas</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Employee injetado por ajax -->
+                                </tbody>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="tab-pane fade" id="nav-tickets" role="tabpanel" aria-labelledby="nav-tickets-tab">
+                    <h5 class="config-subtitle">Configurações dos Tickets</h5>
+                    <p>Content for Tickets tab...</p>
+                </div>
+            </div>
+        </div>
+
+        {% for employee in employees %}
+            <!-- Edit Employee Modal -->
+            <div class="modal fade" id="editEmployeeModal-{{ employee.employee_id }}" tabindex="-1" role="dialog" aria-labelledby="editEmployeeModalLabel-{{ employee.employee_id }}" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editEmployeeModalLabel-{{ employee.employee_id }}">Edit Employee</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <!-- Edit Employee Form -->
+                            <form method="POST" action="{{ url_for('edit_employee', employee_id=employee.employee_id) }}">
+                                <div class="form-group">
+                                    <label for="employeeName">Name</label>
+                                    <input type="text" class="form-control" id="employeeName" name="employee_name" value="{{ employee.name }}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="employeePosition">Position</label>
+                                    <input type="text" class="form-control" id="employeePosition" name="employee_position" value="{{ employee.position }}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="employeeDepartment">Department</label>
+                                    <input type="text" class="form-control" id="employeeDepartment" name="employee_department" value="{{ employee.department }}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="employeeNotes">Notes</label>
+                                    <textarea class="form-control" id="employeeNotes" name="employee_notes">{{ employee.notes }}</textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+
+
+
+
+
+    </div>
+</section>
+
+<!-- Bootstrap JS para a dropdown Company(includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="/static/js/dashboard.js"></script>
+<script src="/static/js/configurations.js"></script>
+
+<!-- =============== ENTER YOUR CODE ABOVE ================= -->
+{% endblock conteudo %}
+<!-- Fim do bloco do extends -->

@@ -1,0 +1,43 @@
+{
+    "name": "Jonh",
+    "surname": "Doe",
+    "phone-number": "967453134",
+    "email": "jonh@gmail.com",
+    "tour-id": "1001",
+    "tour-title": "Visita à Torre Eiffel",
+    "tour-image": "/static/png/tours/paris/torreEffiel/main-torreEffiel.jpg",
+    "important-info": [
+        "Cancelamento grátis",
+        "Duração 2 - 3 horas",
+        "Não recomendado a pessoas com mobilidade reduzida"
+      ],
+    "group":[
+        {"adult" : 2},
+        {"child" : 1},
+        {"baby" : 0}
+    ],
+    "booking-id": "100112349823",
+    "date": "Segunda-feira, 18 Dezembro 2023",
+    "hour": "10:00",
+    "accept-marketing": false,
+    "total-price": "85.00",
+    "payment-method": "mbWay",
+    "payment-details":[
+        {"atm":[
+            {"entity": ""},
+            {"reference": ""}
+        ]},
+        {"credit-card":[
+            {"card-number": ""},
+            {"card-name": ""},
+            {"expiration":[
+                {"month": ""},
+                {"year": ""}
+            ]},
+            {"cvv": ""}
+        ]},
+        {"mb-way":[
+            {"phone-number": "967453134"}
+        ]}
+    ]
+}

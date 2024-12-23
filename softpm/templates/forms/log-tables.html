@@ -1,0 +1,229 @@
+{% block conteudo %}
+<!-- =============== ENTER YOUR CODE BELOW ================= -->
+
+    <section class="backoffice-table-sections">
+        <h4 style="padding: 0!important;">Tabela Clientes</h4>
+        <table id="table-logs" class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Apelido</th>
+                    <th scope="col">email</th>
+                    <th scope="col">Contacto</th>
+                    <th scope="col">Língua</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dados in clientList %}
+                    <tr>
+                        <td> {{ dados.id}}</td>
+                        <td> {{ dados.firstname }}</td>
+                        <td> {{ dados.lastname }}</td>
+                        <td> {{ dados.email }}</td>
+                        <td> {{ dados.mobile }}</td>
+                        <td> {{ dados.language }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+    <section class="backoffice-table-sections">
+        <h4 style="padding: 0!important;">Tabela Reservas</h4>
+        <table id="table-logs" class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Booking #</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Tour</th>
+                    <th scope="col">Duração</th>
+                    <th scope="col">Adultos</th>
+                    <th scope="col">Crianças</th>
+                    <th scope="col">Bebés</th>
+                    <th scope="col">PAX</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Fornecedor</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dados in reservasList %}
+                    <tr>
+                        <td>{{ dados.booking_id }}</td>
+                        <td>{{ dados.date }}</td>
+                        <td>{{ dados.firstname }} {{ dados.lastname }}</td>
+                        <td>{{ dados.tour_title }}</td>
+                        <td>{{ dados.duration }}</td>
+                        <td>{{ dados.totaladult_nr }}</td>
+                        <td>{{ dados.totalchildren_nr }}</td>
+                        <td>{{ dados.totalbaby_nr }}</td>
+                        <td>{{ dados.Pax }}</td>
+                        <td>{{ dados.totalPrice }}</td>
+                        <td>{{ dados.name }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+    <section class="backoffice-table-sections">
+        <h4 style="padding: 0!important;">Tabela das Tours</h4>
+        <table id="table-logs" class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col" style="width: 200px;">Tour</th>
+                    <th scope="col">Duração</th>
+                    <th scope="col">Cidade</th>
+                    <th scope="col">Lugares</th>
+                    <th scope="col">Adulto(€)</th>
+                    <th scope="col">Criança(€)</th>
+                    <th scope="col">Bebé(€)</th>
+                    <th scope="col">URL</th>
+                    <th scope="col">Incluido</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dados in tourList %}
+                    <tr>
+                        <td> {{ dados.id}}</td>
+                        <td> {{ dados.tour_title }}</td>
+                        <td> {{ dados.duration }}</td>
+                        <td> {{ dados.city }}</td>
+                        <td> {{ dados.available_seats }}</td>
+                        <td> {{ dados.price_adult }}</td>
+                        <td> {{ dados.price_children }}</td>
+                        <td> {{ dados.price_baby }}</td>
+                        <td> {{ dados.url }}</td>
+                        <td> 
+                            {% set included_items = dados.included[1:-1].split(', ') %}
+                            {% for item in included_items %}
+                                {{ item|trim|replace('"', '') }}
+                                {% if not loop.last %}{% endif %}
+                            {% endfor %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+    <section class="backoffice-table-sections">
+        <h4 style="padding: 0!important;">Tours por Fornecedor</h4>
+        <table id="table-logs" class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Tour ID</th>
+                    <th scope="col">Tour</th>
+                    <th scope="col">Duração</th>
+                    <th scope="col">Cidade</th>
+                    <th scope="col">Lugares</th>
+                    <th scope="col">Adulto(€)</th>
+                    <th scope="col">Criança(€)</th>
+                    <th scope="col">Bebé(€)</th>
+                    <th scope="col">Fornecedor</th>
+                    <th scope="col">Fornecedor ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dados in suppliersTours %}
+                    <tr>
+                        <td>{{ dados.id }}</td>
+                        <td>{{ dados.tour_title }}</td>
+                        <td>{{ dados.duration }}</td>
+                        <td>{{ dados.city }}</td>
+                        <td>{{ dados.available_seats }}</td>
+                        <td>{{ dados.price_adult }}</td>
+                        <td>{{ dados.price_children }}</td>
+                        <td>{{ dados.price_baby }}</td>
+                        <td>{{ dados.name }}</td>
+                        <td>{{ dados.nif }}</td>         
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+    <section class="backoffice-table-sections">
+        <h4 style="padding: 0!important;">Tours mais Vendidas</h4>
+        <table id="table-logs" class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Tour</th>
+                    <th scope="col">Duração</th>
+                    <th scope="col">Fornecedor</th>
+                    <th scope="col"># Vendas</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dados in reservas_por_tour %}
+                    <tr>
+                        <td> {{ dados.tour_title }}</td>
+                        <td> {{ dados.duration }}</td>
+                        <td> {{ dados.name }}</td>
+                        <td> {{ dados.TotalSales }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+    <section class="backoffice-table-sections">
+        <h4 style="padding: 0!important;">Tabela Fornecedores</h4>
+        <table id="table-logs" class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">NIF</th>
+                    <th scope="col">Empresa</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Contacto</th>
+                    <th scope="col">Website</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dados in supplierList %}
+                    <tr>
+                        <td> {{ dados.nif }}</td>
+                        <td> {{ dados.name }}</td>
+                        <td> {{ dados.email }}</td>
+                        <td> {{ dados.mobile }}</td>
+                        <td> {{ dados.website }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+    
+    <section class="backoffice-table-sections">
+        <h4 style="padding: 0!important;">Tabela Logs</h4>
+        <table id="table-logs" class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">User_ID</th>
+                    <th scope="col">Elemento</th>
+                    <th scope="col">Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dados in dataLogs %}
+                    <tr>
+                        <td> {{ dados.user_id }}</td>
+                        <td> {{ dados.element }}</td>
+                        <td> {{ dados.date }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    
+        <div class="pagination">
+            <div class="pagination-page-info">
+                Total de logs: <strong>{{ pagination.total }}</strong>
+            </div>
+            {{ pagination.links }}
+        </div>    
+    </section>
+    
+
+<!-- =============== ENTER YOUR CODE ABOVE ================= -->
+{% endblock conteudo %}

@@ -1,0 +1,46 @@
+
+    {
+      "id": "1001",
+      "tour-title": "Visita à Torre Eiffel",
+      "popular-tour": 1,
+      "url": "www.url.com",
+      "avaliable-seats": 30,
+      "price": "35.00",
+      "price-adult": "35.00",
+      "price-child": "15.00",
+      "price-baby": "10.00",
+      "main-image": "/static/png/tours/paris/torreEffiel/main-torreEffiel.jpg",
+      "sub-image1": "/static/png/tours/paris/torreEffiel/eiffel-tower-737185_1280.jpg",
+      "sub-image2": "/static/png/tours/paris/torreEffiel/eiffel-2789943_1280.jpg",
+      "sub-image3": "/static/png/tours/paris/torreEffiel/paris-4384732_1280.jpg",
+      "sub-image4": "/static/png/tours/paris/torreEffiel/paris-2036501_1280.jpg",
+      "short-description": "Faça um tour pela famosa Torre Eiffel e admire a cidade de cima. Desfrute de um tour guiado de duas horas em inglês na torre para conhecer as origens e os segredos por trás da sua construção.\"",
+      "description": "Faça um tour pela famosa Torre Eiffel e admire a cidade de cima. Desfrute de um tour guiado de duas horas em inglês na torre para conhecer as origens e os segredos por trás da construção desta obra-prima arquitetônica.<br><br>Pegue o elevador para subir até a plataforma de observação no segundo andar e, se você escolher o ingresso para o topo, siga até o ponto mais alto da torre. De lá, maravilhe-se com as incríveis vistas panorâmicas da capital francesa, incluindo a Sacré Coeur, o Louvre e o Arco do Triunfo.<br><br>Inclua uma opção de cruzeiro de uma hora no Sena, disponível a qualquer momento após sua visita à Torre Eiffel.<br><br>Admire os belos edifícios da cidade, muitos deles listados como Patrimônios da Humanidade pela Unesco, como a Torre Eiffel, o Les Invalides, a Catedral de Notre-Dame e a Conciergerie. Passe por charmosas casas e restaurantes flutuantes pelo caminho.",
+      "included": [
+        "Refeições",
+        "Transporte",
+        "Guia Turístico",
+        "Entradas para Atrações"
+      ],
+      "importantInfo": [
+        "Cancelamento grátis",
+        "Duração 2 - 3 horas",
+        "Não recomendado a pessoas com mobilidade reduzida"
+      ],
+      "date": [
+        {"start_date": "31-01-2023"},
+        {"end_date": "31-08-2024"}
+      ],
+      "availability": [
+        {"Sun": [] },
+        {"Mon": ["11:30", "14:30"] },
+        {"Tue": ["11:30", "14:30"] },
+        {"Wed": [] },
+        {"Thu": ["09:30", "14:30"] },
+        {"Fri": ["11:30", "14:30","15:30"] },
+        {"Sat": [] }
+      ]
+  }
+
+
+

@@ -1,0 +1,536 @@
+
+body, html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+.navbar {
+    box-shadow: none; /* Remove a sombra inicial */
+    background-color: white!important;
+    opacity: 0.8; 
+    transition: all 0.5s ease;
+    top: 0;
+    position: fixed!important;
+    z-index: 1030;
+    width: 100%;
+    height: 70px;
+  }
+  .navbar li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 25px!important;
+  }
+
+  .navbar:hover {
+    opacity: 1; /* Remove transparência */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.7); /* Adiciona sombra branca */
+    background-color: rgba(255, 255, 255, 1); /* Garante fundo sólido */
+  }
+
+  .nav-link:hover {
+    color: #A42447!important; /* Links ficam vermelhos ao passar o mouse */
+  }
+  #menu-image {
+    width: 150px;
+    height: 31px;
+    margin-left: 35px;
+  }
+  #main-image {
+    width: 100%;
+    height: 910px;
+    position: relative;
+    background: url(../png/general/create.jpg) no-repeat;
+    background-size: cover;
+    /*top: -110px;*/
+    filter: brightness(20%);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .55);
+    z-index: -1000;
+  }
+  .mainImage-title {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: -600px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+    list-style: none
+  }
+  .mainImage-title h1{
+    font-size: 70px;
+  }
+  .mainImage-title h3{
+    font-size: 35px;
+  }
+  .page-section {
+    position: relative;
+    top: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+  .white-sec {
+    background-color: white;
+
+  }
+  .grey-sec {
+    background-color: #f1f2f6;
+
+  }
+  .section-title {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }
+
+
+/* ============= Bio section ============*/
+.bio-table p {
+  text-align: justify;
+}
+#div-cv-button {
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+}
+.cv-custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: Outfit;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.cv-custom-btn.btn-7 {
+  background: linear-gradient(0deg, rgb(255,255,255) 20%, rgba(255,255,255,255) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: 30px;
+}
+.cv-custom-btn.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.cv-custom-btn.btn-7:before,
+.cv-custom-btn.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,1);
+  box-shadow:
+          -7px -7px 20px 0px rgba(255,255,255,.9),
+          -4px -4px 5px 0px rgba(255,255,255,.9),
+          7px 7px 20px 0px rgba(0,0,0,.2),
+          4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.cv-custom-btn.btn-7:before{
+  height: 0%;
+  width: 2px;
+}
+.cv-custom-btn.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.cv-custom-btn.btn-7:hover{
+  color: rgba(0,0,0,1);
+  background: transparent;
+}
+.cv-custom-btn.btn-7:hover:before {
+  height: 100%;
+}
+.cv-custom-btn.btn-7:hover:after {
+  width: 100%;
+}
+.cv-custom-btn.btn-7 span:before,
+.cv-custom-btn.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgb(170,23,66);
+  box-shadow:
+          -7px -7px 20px 0px rgba(255,255,255,.9),
+          -4px -4px 5px 0px rgba(255,255,255,.9),
+          7px 7px 20px 0px rgba(0,0,0,.2),
+          4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.cv-custom-btn.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.cv-custom-btn.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.cv-custom-btn.btn-7 span:hover:before {
+  height: 100%;
+}
+.cv-custom-btn.btn-7 span:hover:after {
+  width: 100%;
+}
+.vertical-center {
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 130px 50px 80px 100px;
+} 
+/* end-CV-button*/
+.social-media-div {
+  margin-top: 20px;
+  font-size: 35px;
+}
+.bio-social-icons {
+  color: #000;
+}
+.col-md-2.git {
+  text-align: right;
+}
+.col-md-2.linkedin {
+  text-align: left;
+}
+.col-md-2.git a i:hover {
+  color: grey;
+}
+.bio-photo {
+  padding: 0px 80px 50px 80px;
+}
+
+/* ============= end of Bio section ============*/
+
+/* ============= Projects section ============*/
+.projects-divs {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra para novas linhas se necessário */
+  gap: 20px; /* Espaçamento entre os itens */
+}
+.icon-div {
+  margin-left: 40px;
+  flex: 0 0 100px; /* Define largura fixa para os ícones */
+  text-align: center; 
+  display: flex; /* Torna o elemento um contêiner flexível */
+  flex-direction: column; /* Garante alinhamento em coluna */
+  justify-content: center; /* Alinha verticalmente o conteúdo */
+  align-items: center; /* Alinha horizontalmente o conteúdo */
+}
+.project-icon {
+  width: 100px;
+  transition: transform 0.3s ease;
+  padding-bottom: 30px;
+}
+.project-icon:hover {
+  transform: scale(1.1);
+}
+
+/* ============= end of Projects section ============*/
+
+/* ============= Skills section ============*/
+#skills h3 {
+  text-align: center;
+}
+#skills ul {
+  margin-left: 80px;
+}
+#skills li {
+  margin: 10px 0;
+}
+
+/* ============= end of Skills section ============*/
+
+
+/* ============= Contact section ============*/
+#contact h5 {
+  text-align: center;
+}
+#contact h5 a{
+  color: black;
+}
+#contact h5 a:hover{
+  color: grey;
+}
+.form-check-input:checked {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
+
+#contact .card {
+  width: 10rem;
+  max-width: 25rem!important;
+  transition: box-shadow .3s;
+  padding: 20px 20px 20px 20px;
+}
+#contact .card:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.contact-form label {
+  margin-bottom: .5rem!important;
+}
+/* Define focus style for inputs and textarea */
+input:focus, textarea:focus {
+  border-color: black !important;
+  box-shadow: 0 0 3px grey !important;
+  outline: none !important;
+}
+  /* Custom style for the checkbox */
+  .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid grey;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+
+  .custom-checkbox:checked {
+    background-color: black;
+    border: 1px solid #000;
+  }
+
+  .custom-checkbox:focus {
+    outline: none !important;
+  }
+ .submit-button {
+    background-color: #343A40;
+    border: #343A40;
+  }
+  .submit-button:hover {
+    background-color: black;
+    border: black;
+  }
+
+  .alert {
+    text-align: center;
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+  }
+  .alert-success {
+    color: #169258;
+    background-color: white;
+    border-color: white;
+}
+/* ============= end of Contact section ============*/
+
+
+/* Configurações gerais da modal */
+.modal-lg {
+  max-width: 950px;
+}
+.modal-dialog-centered {
+  top: -200px;
+}
+
+.modal-header {
+  background:rgba(0, 0, 0, .9);
+  border-bottom: none; /* Remove a linha de separação no header */
+}
+.modal-title {
+  font-size: 30px;
+  color: #A42447;
+}
+
+.modal-body {
+  background:rgba(0, 0, 0, .9);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Estilo da coluna da imagem */
+.modal-body .col-5 img {
+  border-radius: 8px;
+  /*border: 1px white solid;*/
+  box-shadow: 0px 4px 10px rgba(48, 47, 47, 0.486); 
+  max-height: 300px; 
+  object-fit: cover; 
+}
+
+/* Estilo da coluna de conteúdo */
+.modal-body .col-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding-right: 16px;
+}
+
+.modal-body h6 {
+  font-weight: bold;
+  color: #A42447; 
+  margin-bottom: 10px;
+}
+
+.modal-body p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  text-align: justify;
+  margin-right: 10px;
+}
+
+.modal-body ul {
+  font-size: 1rem;
+  list-style-type: disc;
+  margin-left: 20px; 
+  padding: 0;
+  color: white;
+}
+
+
+/* Estilo do rodapé da modal */
+.modal-footer {
+  border-top: none; 
+  background:rgba(0, 0, 0, .9);
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-footer .btn-primary {
+  background-color: #A42447;
+  border: none;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #8e1e3e; 
+}
+
+.modal-footer .btn-secondary {
+  background-color: transparent!important;
+  border: #A42447 solid 1px!important;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #A42447!important; 
+}
+
+.modal-footer .btn-primary:focus {
+  border: #A42447!important; 
+}
+.modal-footer .btn-primary::selection {
+  border: #A42447!important; 
+}
+
+.modal-header .btn-close {
+  filter: invert(38%) sepia(55%) saturate(1278%) hue-rotate(320deg) brightness(80%) contrast(94%);
+  opacity: 1; 
+}
+
+.modal-header .btn-close:hover {
+  filter: invert(27%) sepia(81%) saturate(500%) hue-rotate(314deg) brightness(80%) contrast(88%);
+  opacity: 1;
+}
+
+.modal-header .btn-close:focus {
+  box-shadow: none; 
+}
+
+
+/* ============= Footer ============*/
+
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: #000000;
+}
+.text-footer {
+  position: relative;
+  top: 3px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+.text-footer a:hover {
+  color: grey;
+}
+#footer-socialMedia {
+ text-align: left;
+}
+ #footer-socialMedia a {
+  color: white;
+  font-size: 25px;
+ }
+ .fa-github:hover {
+  color: grey;
+ }
+ .fa-linkedin:hover {
+  color: #0A66C2;
+ }
+
+/* ============= end of Footer ============*/
+
+/* CV lateral floating button */
+.floating-container {
+  position: fixed;
+  z-index: 999;
+  bottom: 97px;
+  right: -47px;
+  display: grid;
+  width: auto;
+  transform: rotate(90deg);
+}
+.floating-container .btn-primary {
+  font-family: Outfit;
+  font-size: 17px;
+  font-weight: normal;
+  color: white;
+  background-color:rgba(179,31,72);
+  border-color: rgba(179,31,72);
+  
+  letter-spacing: .5px;
+}
+.floating-container .btn-primary:hover{
+  font-family: Outfit;
+  color: black;
+  background-color: #fff;
+  border-color: #000;
+}
+.visible-xs {
+  display: none;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(179,31,72, .9);
+  border-radius: 10px;
+}
+#shadow-host-companion{
+  padding-top: 0;
+}
+
+a {color: #fff; transition: text-color 0.5s;}
+a:link { text-decoration: none}
+a:visited { text-decoration: none}
+a:hover { text-decoration: none}
+a:active { text-decoration: none}
+a:focus { outline: 0}

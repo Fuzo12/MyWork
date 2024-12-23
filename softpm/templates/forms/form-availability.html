@@ -1,0 +1,26 @@
+{% block conteudo %}
+<!-- =============== ENTER YOUR CODE BELOW ================= -->
+    <div class="div-availability col-12">
+        <div class="segment col-12 row"></div>
+        <div class="tourReview">
+            <button class="btn btn-danger">Esgota rápido!</button>
+            <a href="" class="card-link review-stars-availability">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </a>
+        </div>
+        <h3>A partir de</h3>
+        <h2>{{ '{:.2f}'.format(tour.price_adult) }}€</h2>
+        <div class="availability-button">
+            <button class="btn btn-primary" onclick="prepareForm({{combined_json}})"></i>Verifique a disponibilidade</button>
+            <!--<button class="btn btn-primary" onclick="prepareForm({{combined_json|tojson}})"></i>Verifique a disponibilidade</button>-->
+            <p>Reserve já para garantir o seu lugar!</p>
+        </div>
+
+<!-- =============== ENTER YOUR CODE ABOVE ================= -->
+    </div><!-- NÃO ELIMINAR - END OF DIV-AVAILABILITY -->
+
+{% endblock conteudo %}

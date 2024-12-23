@@ -1,0 +1,628 @@
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+    font-size: 1em;
+}
+html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+body {
+    min-height: 100%;
+}
+section{
+    padding: 100px 0 30px 0;
+    min-height: 100%;;
+}
+h1 {
+    font-family: "Robot Extra Bold";
+
+}
+/*remove margins of the page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 77px;
+    background-color: rgba(255, 255, 255, .8);
+    z-index: 999;
+    top: -1px;
+    position: fixed;
+}
+header:hover{
+    background-color: rgba(255, 255, 255, 255);
+    box-shadow:
+            -7px -7px 20px 0px rgba(255,255,255,.9),
+            -4px -4px 5px 0px rgba(255,255,255,.9),
+            7px 7px 20px 0px rgba(0,0,0,.1),
+            4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+}
+header .container{
+    position: relative;
+}
+header .logotipo{
+    width: 165px;
+    height: 58px;
+    position: absolute;
+    top: -46px;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+header .logotipo:hover {
+    opacity: .6;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
+
+.menu {
+    margin: 26px 0;
+}
+.menu li{
+    margin-top: 10px;
+    display: inline-block;
+}
+.menu li a{
+    font-family: Roboto;
+    background-color: rgba(255, 255, 255, .1);
+    color: #004AAD;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .6px;
+}
+.menu li a:hover {
+    color: #37B5FE;
+}
+.menu ul{
+    margin-top: -12px;
+    display: inline;
+    position: absolute; /*usado com o pull-right para colocar o texto do lado direito*/
+    right: 125px; /*usado com o pull-right para colocar o texto do lado direito*/
+}
+.link-1 {
+    transition: 0.1s ease;
+    text-decoration: none;
+    border-bottom: 4px solid rgba(255, 255, 255, .1);
+    padding: 20px 0;
+    margin: 0 20px;
+}
+/*
+.link-1:hover {
+    color: #37B5FE;
+    border-top: 2px solid #37B5FE;
+    border-bottom: 2px solid #37B5FE;
+    padding: 5px 0;
+}
+*/
+.searchBar {
+    right: 550px;
+    position: relative;
+    top: -4px;
+    height: 37px;
+    border-radius: 0;
+    font-size: 11px;
+    font-style: italic;
+    border-radius: 17px;
+    border: 3px solid #0C52B1;
+}
+.lupa-icon {
+    position: relative;
+    display: inline;
+    right: 740px;
+    top: -6px;
+    font-size: 24px;
+}
+svg.element.style {
+    display: inline;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/*================================ Scrollbar ===========================================*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 5%, 4%);
+    border-radius: 10px;
+}
+/*================================ End Scrollbar ===========================================*/
+#shadow-host-companion{
+    padding-top: 0;
+}
+
+a {color: #fff; transition: text-color 0.5s;}
+a:link { text-decoration: none}
+a:visited { text-decoration: none}
+a:hover { text-decoration: none}
+a:active { text-decoration: none}
+a:focus { outline: 0}
+
+ul {
+    list-style-type: none;
+}
+/*
+***********************************************************************************************************
+*************************************  YOUR CODE GOES BELOW  ***********************************************
+*/
+
+/* ====================================== Company Page =====================================*/
+.centered.company-page {
+    top: 40%;
+  }
+
+.modal-button-close, .modal-button-create {
+    width: 100px!important;
+}
+
+/* ===================================== Login =====================================*/
+.login-supplier-img:hover {
+    opacity: .8;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
+.login {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.login--content {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #ededed;
+}
+
+.login--contentWrap {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+
+.login--background {
+    width: calc(100% - 620px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: left;
+    position: relative;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1613px) {
+    .login--background {
+        width:calc(100% - 530px);
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .login--background {
+        width:calc(100% - 460px);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .login--background {
+        width:50%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .login--background {
+        display:none;
+    }
+}
+
+.login--background::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.1);
+}
+
+.login--form {
+    width: 620px;
+    min-height: 100vh;
+    display: block;
+    background-color: #fff;
+    padding: 195px 160px 55px 160px;
+}
+
+@media only screen and (max-width: 1613px) {
+    .login--form {
+        width:530px;
+        padding: 195px 115px 55px 115px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .login--form {
+        width:460px;
+        padding:52px 80px 55px 80px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .login--form {
+        width:50%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.login--titleWrap {
+    margin: 40px 0 40px 0;
+}
+
+.login--title {
+    width: 100%;
+    display: block;
+    font-size: 33px;
+    color: #262626;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.login--subTitle {
+    width: 100%;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    font-size: 17px;
+    color: #9b9b9b;
+    line-height: 1.2;
+}
+
+.login--inputWrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+    height: 47px;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.login--selectWrap {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-top: 35px;
+    position: relative;
+}
+
+.login--input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    color: #262626;
+    line-height: 1.2;
+    padding: 0 12px;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    box-shadow: none;
+    border-radius: 4px;
+    text-align: left;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.login--input:focus {
+    outline: 0;
+}
+
+.login--input::placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+
+.login--buttonWrap {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.login--button {
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    text-decoration: none;
+    outline: 0;
+    width: 145px;
+    height: 47px;
+    font-weight: 700;
+    letter-spacing: .01em;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    font-family: 'Roboto',sans-serif
+}
+
+.login--button:hover {
+    background: #3d3d3d
+}
+
+.register--input:focus {
+    outline: 0
+}
+
+.register--input::placeholder {
+    color: #9b9b9b;
+    opacity: 1
+}
+
+.register--buttonWrap {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end
+}
+
+.register--button {
+    color: #000;
+    background-color: #FFFFFF;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 4px;
+    text-decoration: none;
+    outline: 0;
+    width: 145px;
+    height: 47px;
+    font-weight: 700;
+    letter-spacing: .01em;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    font-family: 'Roboto',sans-serif
+}
+
+.register--button:hover {
+    background: #3d3d3d;
+    color: #FFFFFF;
+    border-color: #3d3d3d;
+}
+
+.login--forgotPassword {
+    margin-top: 10px
+}
+
+.login--forgotPassword a {
+    color: #9b9b9b;
+    text-decoration: underline
+}
+.login .recover-section {
+    display: none;
+}
+/* ====== Recover password form =========*/
+
+.login .recover-section {
+    display: none;
+}
+/*Register Form*/
+.supplier-register--form {
+    width: 620px;
+    min-height: 100vh;
+    display: block;
+    background-color: #fff;
+    padding: 90px 160px 15px 160px;
+}
+.supplier-register--form label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: grey;
+}
+.client-register--form {
+    padding-left: 60px ;
+    padding-right: 60px ;
+    padding-top: 10px ;
+}
+.register-client--tittleWrap{
+    margin: 0 0 15px 0;
+}
+.form-select {
+    color: #9b9b9b;
+    opacity: 1;
+    font-size: 14px;
+}
+.register-supplier--tittleWrap {
+    margin: 20px 0 30px 0;
+}
+
+.register--inputWrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+    height: 47px;
+    position: relative;
+    margin-bottom: 43px;
+}
+
+
+/* ====================================== Enf of User-Login =====================================*/
+
+
+/* ====================================== Rodapé =====================================*/
+footer {
+    background: #222222;
+    height: 350px;
+    font-size: 15px;
+}
+.py-5 {
+    color: white;
+    font-family: 'Roboto';
+}
+.py-5 h5{
+    text-decoration: underline;
+}
+.py-5 a {
+    color: white;
+}
+.py-5 a:hover {
+    color: #FF4141;
+}
+.py-5 a:active{
+   color: white;
+}
+
+.btn-icon-text {
+    background: black;
+    color: white;
+    border-color: white;
+    margin: 0 15px 0 0;
+    height: 60px;
+}
+
+.btn-icon-text:hover {
+    background: #FF4141;
+    color: white;
+    border-color: white;
+    .mdi-36px {
+        color: white;
+    }
+}
+.mdi-36px {
+    color: white;
+    font-size: 39px;
+    margin-right:10px;
+    top: -5px;
+    position: relative;
+}
+.newsletter {
+    position: relative;
+    text-decoration: none!important;
+    right: -27px;
+}
+.plane {
+    top: -5px;
+    position: relative;
+}
+.ilove {
+    top: -5px;
+    position: relative;
+    right: -41px;
+}
+.all-rights {
+    padding: 0;
+}
+.all-rights span{
+    color: white;
+    font-family: "Roboto Light";
+}
+.div-footer-logo{
+    text-align: center;
+    top: -10px;
+    right: -40px;
+    position: relative;
+}
+.footer-logo{
+    width: 170px;
+    position: relative;
+    right: -22px;
+
+}
+.all-rights-rodape {
+    color: white;
+    border-top: white solid 1px;
+    padding: 18px 0 0 0;
+}
+.icons {
+    text-align: right;
+    padding: 0;
+}
+.icons span {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.icons i {
+    font-size: 25px;
+}
+
+#shadow-host-companion {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
